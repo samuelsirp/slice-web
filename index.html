@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>$SLICE — Hold the bag, get a slice</title>
+<meta name="description" content="$SLICE: 100% of claimed pump.fun creator fees get baked into a fresh pie every 5 minutes and sliced among the top 10 holders. Bigger bag, bigger slice.">
+<meta property="og:title" content="$SLICE — Hold the bag, get a slice">
+<meta property="og:description" content="A fresh pie every 5 minutes, sliced among the top 10 holders. 100% of claimed creator fees.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<meta property="og:image" content="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,100&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="fillBody"><path d="M100 100 L169.5 81.4 A72 72 0 1 1 136 37.6 Z"/></clipPath>
+    <clipPath id="fillSlice"><path d="M100 100 L136 37.6 A72 72 0 0 1 169.5 81.4 Z"/></clipPath>
+    <pattern id="lattice" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="22" height="22" fill="#f39bb9"/>
+      <rect x="0" y="0" width="8" height="22" fill="#ffe3a3"/>
+      <rect x="0" y="0" width="22" height="8" fill="#fff0c4"/>
+    </pattern>
+    <symbol id="pie" viewBox="0 0 200 200">
+      <ellipse cx="100" cy="190" rx="74" ry="7" fill="rgba(43,35,64,.12)"/>
+      <path d="M100 100 L183.1 77.7 A86 86 0 1 1 143 25.5 Z" fill="#f7cf86" stroke="#c98f4f" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M100 100 L183.1 77.7 A86 86 0 1 1 143 25.5 Z" fill="none" stroke="#fff4d6" stroke-width="5" stroke-dasharray="2 9" stroke-linecap="round" opacity=".9"/>
+      <g clip-path="url(#fillBody)"><rect width="200" height="200" fill="url(#lattice)"/></g>
+      <g transform="translate(13 -10)">
+        <path d="M100 100 L143 25.5 A86 86 0 0 1 183.1 77.7 Z" fill="#f7cf86" stroke="#c98f4f" stroke-width="3" stroke-linejoin="round"/>
+        <g clip-path="url(#fillSlice)"><rect width="200" height="200" fill="url(#lattice)"/></g>
+        <path d="M100 100 L136 37.6" stroke="#d26b8f" stroke-width="3"/>
+      </g>
+    </symbol>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <path d="M32 32 L58.6 24.9 A27.5 27.5 0 1 1 45.8 8.2 Z" fill="#f7cf86" stroke="#2b2340" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M32 32 L52.2 26.6 A21 21 0 1 1 42.5 13.8 Z" fill="#f39bb9"/>
+      <path d="M36.5 28.6 L50.2 5.2 A27.5 27.5 0 0 1 62.8 21.9 Z" fill="#f7cf86" stroke="#2b2340" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <a href="#top" class="brand"><img class="brand-logo" src="img/logo-mark.png" alt="$SLICE logo"><span class="js-ticker-full">$SLICE</span></a>
+  <nav class="nav-links">
+    <a href="#oven">The Oven</a><a href="#about">Lore</a><a href="#buy">How to buy</a><a href="#tokenomics">Recipe</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-accent btn-sm" data-link="pump" href="#" target="_blank" rel="noopener">Buy <span class="js-ticker-full">$SLICE</span></a>
+</header>
+
+<main id="top">
+
+<!-- 1. HERO + CA -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="kicker">Fresh out the oven every <span class="js-interval">5</span> min · Solana · pump.fun</p>
+    <h1>Hold the bag,<br><em>get a slice.</em></h1>
+    <p class="lead">Every <b><span class="js-interval">5</span> minutes</b> we bake a fresh pie from <b>100% of the claimed creator fees</b> and slice it among the <b>top <span class="js-topn">10</span> holders</b> of <span class="js-ticker-full">$SLICE</span>. Bigger bag, bigger slice. Paid in SOL, straight to your wallet.</p>
+
+    <div class="ca" id="ca">
+      <span class="ca-label">CA</span>
+      <code class="ca-value js-ca">Launching soon</code>
+      <button class="ca-copy" type="button" id="copyCa" aria-label="Copy contract address">Copy</button>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn-accent" data-link="pump" href="#" target="_blank" rel="noopener">Buy on pump.fun</a>
+      <a class="btn btn-ghost" data-link="jup" href="#" target="_blank" rel="noopener">Jupiter</a>
+      <a class="btn btn-ghost" data-link="dex" href="#" target="_blank" rel="noopener">Chart</a>
+    </div>
+    <div class="soc-row">
+      <a class="soc" data-link="x" href="#" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20z"/></svg></a>
+      <a class="soc" data-link="tg" href="#" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.6c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.3 1.4 11.8c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg></a>
+    </div>
+  </div>
+
+  <div class="hero-art" aria-hidden="true">
+    <div class="plate"></div>
+    <svg class="hero-pie"><use href="#pie"/></svg>
+    <div class="tag tag-1"><span>Next pie in</span><b class="js-clock-mini">05:00</b></div>
+    <div class="tag tag-2"><span>Sliced for</span><b>Top <span class="js-topn">10</span></b></div>
+    <div class="tag tag-3"><span>Filling</span><b>100% fees</b></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track js-marquee"></div></div>
+
+<!-- LIVE: THE OVEN -->
+<section class="live" id="oven">
+  <div class="sec-head">
+    <p class="eyebrow">Live from the kitchen</p>
+    <h2>The Oven <span class="live-dot"></span></h2>
+    <p class="mode js-mode"><span class="badge badge-warn">Example data</span> Treasury not connected yet. Numbers below are a demo.</p>
+    <p class="refresh-note" style="margin:6px 0 0;font-size:14px;color:var(--mute)">🔄 Live data updates every 30 seconds.</p>
+  </div>
+
+  <div class="live-grid">
+    <div class="countdown">
+      <p class="k">Next pie in</p>
+      <p class="clock js-clock">05:00</p>
+      <div class="bar"><span class="js-bar"></span></div>
+      <p class="sub">Baked + sliced every <b class="js-interval">5</b> min, on the UTC clock. Top <span class="js-topn">10</span> eat.</p>
+    </div>
+    <div class="stat stat-acc"><p class="k">Total fees served (100%)</p><p class="v"><span class="js-total">—</span> <small>SOL</small></p></div>
+    <div class="stat"><p class="k">Pies baked</p><p class="v js-feedings">—</p></div>
+    <div class="stat"><p class="k">In the oven (treasury)</p><p class="v"><span class="js-balance">—</span> <small>SOL</small></p></div>
+    <div class="stat"><p class="k">Bag for a seat at the table<span class="js-entry-ex"></span></p><p class="v"><span class="js-entry">—</span> <small class="js-ticker-full">$SLICE</small></p></div>
+  </div>
+
+  <div class="tres">
+    <span class="tres-label">Treasury</span>
+    <code class="tres-value js-tres">Coming soon</code>
+    <button class="ca-copy" type="button" id="copyTres" aria-label="Copy treasury address">Copy</button>
+    <a class="tres-scan js-tres-scan" href="#" target="_blank" rel="noopener">Solscan ↗</a>
+  </div>
+
+  <div class="board board-top">
+    <div class="board-head">
+      <h3>This round's slices</h3>
+      <span class="js-top-badge"></span>
+    </div>
+    <div class="slices">
+      <div class="chart-wrap"><svg class="chart js-chart" viewBox="0 0 240 240" role="img" aria-label="Pie chart of the current top holders' slices"></svg></div>
+      <table class="top">
+        <thead><tr><th>#</th><th>Wallet</th><th class="r">Balance</th><th class="r">Slice</th></tr></thead>
+        <tbody class="js-top"></tbody>
+      </table>
+    </div>
+    <p class="note js-top-note"></p>
+  </div>
+
+  <div class="board">
+    <div class="board-head">
+      <h3>Fresh pies served</h3>
+      <span class="js-feed-badge"></span>
+    </div>
+    <ol class="tickets js-winners"></ol>
+    <p class="note js-note"></p>
+  </div>
+</section>
+
+<!-- 2. ABOUT / LORE -->
+<section class="about" id="about">
+  <p class="eyebrow">The lore</p>
+  <h2>Everyone ate.<br><em>Except the holders.</em></h2>
+  <div class="about-cols">
+    <div>
+      <p class="big">Devs ate. Snipers ate. Bundlers ate. The people actually holding the bag got crumbs.</p>
+      <p><span class="js-ticker-full">$SLICE</span> fixes the recipe. Every trade bakes pump.fun creator fees into the oven, and <b>100% of the fees we claim</b> come out as a fresh pie every <span class="js-interval">5</span> minutes, sliced among the top <span class="js-topn">10</span> holders. No team cut. No dev skimming the filling. Bigger bag, bigger slice.</p>
+    </div>
+    <ol class="how-list">
+      <li><b>Bake.</b> Every <span class="js-interval">5</span> minutes, on the UTC clock, all fees claimed in that window go into one pie.</li>
+      <li><b>Snapshot.</b> At bake time we take the top <span class="js-topn">10</span> holders. Bonding curve, LP pools and burn addresses don't get a seat.</li>
+      <li><b>Slice.</b> Your slice = your balance ÷ the combined balance of the top <span class="js-topn">10</span>. Hold 30% of that total, get 30% of the pie.</li>
+      <li><b>Serve.</b> SOL lands in your wallet automatically. Every payout is public on Solscan.</li>
+    </ol>
+  </div>
+  <div class="calc">
+    <div>
+      <p class="eyebrow">Slice calculator</p>
+      <h3>How big is my slice?</h3>
+      <label for="oddsIn">Your bag (<span class="js-ticker-full">$SLICE</span>)</label>
+      <input id="oddsIn" type="text" inputmode="numeric" value="25,000,000" autocomplete="off">
+    </div>
+    <div class="calc-out">
+      <p class="calc-main js-calc-main">—</p>
+      <p class="calc-note js-calc-note">—</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. HOW TO BUY -->
+<section class="howto" id="buy">
+  <div class="sec-head"><p class="eyebrow">How to buy</p><h2>Pull up a chair</h2></div>
+  <ol class="steps">
+    <li><span class="n">01</span><h3>Get a wallet</h3><p>Grab Phantom or Solflare. Write your seed phrase down and never share it. Nobody from the team will ever ask for it.</p></li>
+    <li><span class="n">02</span><h3>Load SOL</h3><p>Buy SOL on any exchange and send it to your wallet. Keep a little extra for gas.</p></li>
+    <li><span class="n">03</span><h3>Swap for <span class="js-ticker-full">$SLICE</span></h3><p>Paste the official CA from this page into pump.fun or Jupiter. Always double-check it. Fakes exist.</p></li>
+    <li><span class="n">04</span><h3>Climb the top <span class="js-topn">10</span></h3><p>Stack enough to crack the top <span class="js-topn">10</span> and you get a slice every <span class="js-interval">5</span> minutes. Hold the bag, get a slice.</p></li>
+  </ol>
+  <div class="btn-row center">
+    <a class="btn btn-accent" data-link="pump" href="#" target="_blank" rel="noopener">pump.fun</a>
+    <a class="btn btn-ghost" data-link="jup" href="#" target="_blank" rel="noopener">Jupiter</a>
+    <a class="btn btn-ghost" data-link="dex" href="#" target="_blank" rel="noopener">Dexscreener</a>
+  </div>
+</section>
+
+<!-- 4. TOKENOMICS -->
+<section class="tokenomics" id="tokenomics">
+  <div class="sec-head"><p class="eyebrow">Tokenomics</p><h2>The recipe</h2><p class="sub-h">Four ingredients. Nothing hidden under the crust.</p></div>
+  <div class="tk-grid">
+    <div class="tk tk-hero"><p class="k">Total supply</p><p class="v">1,000,000,000</p><p class="s">Fixed supply. Fair launch on pump.fun. 0% team, 0/0 tax.</p></div>
+    <div class="tk"><p class="k">Claimed fees to holders</p><p class="v"><span class="js-share">100</span>%</p><p class="s">Every claimed creator fee, served in SOL.</p></div>
+    <div class="tk"><p class="k">Who eats</p><p class="v">Top <span class="js-topn">10</span></p><p class="s">Biggest real wallets. Curve, LP and burn excluded.</p></div>
+    <div class="tk"><p class="k">Slice size</p><p class="v">∝ bag</p><p class="s">Your balance ÷ top-<span class="js-topn">10</span> total.</p></div>
+    <div class="tk"><p class="k">Bake time</p><p class="v"><span class="js-interval">5</span> min</p><p class="s">Snapshot + payout on the UTC clock.</p></div>
+  </div>
+</section>
+
+<!-- 5. ROADMAP -->
+<section class="roadmap" id="roadmap">
+  <div class="sec-head"><p class="eyebrow">Roadmap</p><h2>From oven to bakery</h2></div>
+  <ol class="road">
+    <li class="done"><span class="ph">Phase 1</span><h3>Preheat</h3><p>Launch on pump.fun. Treasury wallet goes public. Creator fees routed to it.</p></li>
+    <li><span class="ph">Phase 2</span><h3>First bake</h3><p>Pies every 5 minutes. Every payout shows up here with its Solscan link.</p></li>
+    <li><span class="ph">Phase 3</span><h3>The bakery</h3><p>Bond out of the curve. Dexscreener, live top-10 board, bigger pies as volume grows.</p></li>
+    <li><span class="ph">Phase 4</span><h3>Franchise</h3><p>Community-voted specials, collabs and double-slice days.</p></li>
+  </ol>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq" id="faq">
+  <div class="sec-head"><p class="eyebrow">FAQ</p><h2>Ask the baker</h2></div>
+  <div class="faq-list">
+    <details open><summary>Who gets a slice?</summary><p>The top <span class="js-topn">10</span> <span class="js-ticker-full">$SLICE</span> holders at each snapshot. Every <span class="js-interval">5</span> minutes, on the UTC clock, we bake 100% of the creator fees claimed in that window into one pie and slice it among them.</p></details>
+    <details><summary>How big is my slice?</summary><p>Proportional to your balance within the top <span class="js-topn">10</span>. Your slice = your <span class="js-ticker-full">$SLICE</span> ÷ the combined <span class="js-ticker-full">$SLICE</span> of all top-<span class="js-topn">10</span> wallets. Hold a quarter of that total, get a quarter of the pie.</p></details>
+    <details><summary>Which wallets don't count?</summary><p>The pump.fun bonding curve, LP pools (Raydium, Meteora, PumpSwap), burn addresses and the treasury itself. Only real holder wallets get a seat at the table.</p></details>
+    <details><summary>How much of the fees go to holders?</summary><p>100% of claimed creator fees. No team cut. Everything is visible on-chain from the treasury wallet above.</p></details>
+    <details><summary>Do I need to claim anything?</summary><p>No. If you're in the top <span class="js-topn">10</span> at bake time, the SOL lands in your wallet automatically. Anyone DMing you to "claim" is a scammer.</p></details>
+    <details><summary>Does this site touch my wallet?</summary><p>Never. It only reads public blockchain data. It will never ask you to connect, sign or send anything.</p></details>
+    <details><summary>Is this financial advice?</summary><p>No. <span class="js-ticker-full">$SLICE</span> is a memecoin with no intrinsic value and no expectation of profit. Only ape what you can afford to lose.</p></details>
+  </div>
+</section>
+
+</main>
+
+<!-- 7. SOCIALS FOOTER -->
+<footer class="foot">
+  <div class="foot-big">
+    <img class="foot-pie" src="img/logo-mark.png" alt="">
+    <p class="foot-title">Everybody wants<br><em>a slice.</em></p>
+  </div>
+  <div class="foot-links">
+    <a class="btn btn-accent" data-link="x" href="#" target="_blank" rel="noopener">X / Twitter</a>
+    <a class="btn btn-ghost" data-link="tg" href="#" target="_blank" rel="noopener">Telegram</a>
+    <a class="btn btn-ghost" data-link="pump" href="#" target="_blank" rel="noopener">pump.fun</a>
+    <a class="btn btn-ghost" data-link="jup" href="#" target="_blank" rel="noopener">Jupiter</a>
+    <a class="btn btn-ghost" data-link="dex" href="#" target="_blank" rel="noopener">Dexscreener</a>
+  </div>
+  <p class="disc"><span class="js-ticker-full">$SLICE</span> is a memecoin for entertainment only. No intrinsic value, not financial advice. This site is read-only and will never ask for keys or signatures.</p>
+  <p class="copy">© 2026 <span class="js-name">Slice</span> · Hold the bag, get a slice</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
