@@ -210,7 +210,7 @@ details p{padding:0 0 24px;color:var(--ink2);max-width:62ch}
 /* footer */
 .foot{background:var(--pink);border-top:2px solid var(--ink);padding:90px clamp(20px,5vw,72px) 40px;margin-top:60px}
 .foot-big{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
-.foot-pie{width:clamp(110px,13vw,180px);height:clamp(110px,13vw,180px);object-fit:contain}
+.foot-pie{width:clamp(110px,13vw,180px);height:clamp(110px,13vw,180px);object-fit:contain;filter:drop-shadow(0 14px 18px rgba(43,35,64,.22))}
 .foot-title{font:800 clamp(46px,7.5vw,112px)/.95 var(--disp);letter-spacing:-.03em}
 .foot-title em{color:#fff;-webkit-text-stroke:2px var(--ink)}
 .foot-links{display:flex;flex-wrap:wrap;gap:12px;margin:44px 0 40px}
