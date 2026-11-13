@@ -266,3 +266,19 @@ details p{padding:0 0 24px;color:var(--ink2);max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .tag b span{font:inherit;color:inherit;letter-spacing:0;text-transform:none}
 .hero h1{font-size:clamp(56px,7.4vw,112px)}
+
+/* ===== The holder table ===== */
+.table-band{position:relative;max-width:none;margin:70px 0;padding:90px clamp(20px,5vw,72px);background:#f28ba8;color:#fff3dc;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;background-image:radial-gradient(rgba(255,243,220,.35) 1.5px,transparent 1.6px);background-size:64px 64px}
+.tb-corner{position:absolute;font:700 12px var(--mono);letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.tb-corner i{display:inline-block;width:40px;height:1.5px;background:currentColor}
+.tb-corner.tl{top:28px;left:clamp(20px,5vw,48px)}.tb-corner.tr{top:28px;right:clamp(20px,5vw,48px)}
+.tb-corner.bl{bottom:28px;left:clamp(20px,5vw,48px)}.tb-corner.br{bottom:28px;right:clamp(20px,5vw,48px)}
+.tb-scene{display:flex;align-items:center;justify-content:center;gap:clamp(30px,7vw,110px)}
+.tb-fork,.tb-knife{width:34px;height:190px;flex:none;color:#fff3dc}
+.tb-plate{width:min(480px,86vw);aspect-ratio:1;border-radius:50%;border:4px solid #fff3dc;background:rgba(255,255,255,.08);box-shadow:0 30px 60px -20px rgba(120,30,70,.35);display:grid;place-items:center;flex:none}
+.tb-inner{width:84%;aspect-ratio:1;border-radius:50%;border:2px dashed rgba(255,243,220,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 9%}
+.tb-slice{width:84px;height:84px;object-fit:contain;margin-bottom:4px;filter:brightness(0) invert(94%) sepia(12%) saturate(500%) hue-rotate(330deg)}
+.tb-title{font:800 clamp(26px,3vw,40px)/1.02 var(--disp);color:#fff3dc;margin:0 0 12px}
+.tb-sub{font:700 15px/1.4 var(--body);margin:0 0 12px}
+.tb-mini{font:700 10px var(--mono);letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin:0}
+@media (max-width:720px){.tb-fork,.tb-knife,.tb-corner.tr,.tb-corner.br{display:none}.table-band{padding:80px 16px}.tb-sub{font-size:13px}.tb-title{font-size:28px}}
