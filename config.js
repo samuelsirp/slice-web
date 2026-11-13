@@ -25,7 +25,7 @@ window.SITE_CONFIG = {
 
   // Extra owner wallets to exclude from the top N (LP/pool authorities, team, CEX, etc.).
   // Program-owned accounts (pump.fun bonding curve, AMM pools) and the burn address are excluded automatically.
-  EXCLUDE_WALLETS: ["HPb1yYwgnW1QQuxZGGNRysoeGsuUwHdPVN5r7ifRUjTV"],
+  EXCLUDE_WALLETS: ["HPb1yYwgnW1QQuxZGGNRysoeGsuUwHdPVN5r7ifRUjTV","QSqMErCjnQbRCR2KKW69bsiVgT2veTFH8vkjUEtu3Y9","7mC9AFVH9d9ZZFqJpQaAtAyWEqMjmpAGjMreQXohxNyH","2eSq7oZLFt66MmUUpCS7rm2eQZPwoiLkNggQpnsd73nJ","35SaEG7eFnnQbbQdE1ugx9XTK6AKSVDACCZJcKamnKR3","HosVtrbo9eGY1aPQbuiqL2RkUeeNaWBAx5n5hrNJ3tRu","BMx5F8SNT65kCEeppjTHoiG6GHNiMLn9J6RMrHKehLbJ","8XgJxYxuCyDn9GHsGsRV3ZbdLxDzHatfnemjzgX8ZFqs","91t3caFXCnc5xcnfYApdXTN8AbZFrc8BahqBS3g1YLag","6EX8pJFXVmLhv1oZdoA2mbNxHRvyw17iQhNBgiVnyCUL"],
 
   // Minutes between feedings (snapshot + payout, aligned to the UTC clock)
   FEED_INTERVAL_MIN: 5,
