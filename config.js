@@ -8,13 +8,13 @@ window.SITE_CONFIG = {
   TICKER: "SLICE",    // ticker WITHOUT the $ (rendered as $SLICE)
 
   // Token contract address (mint). Leave "" until launch -> site shows "launching soon" + example data.
-  CA: "",
+  CA: "Dp83nbJ7x9WVVAuhHh6P9J29d6qC3xbKFMmLMQ9Spump",
 
   // Public treasury wallet address (receives the pump.fun creator fees). Public address ONLY.
   TREASURY: "78KgGmbSPagAhkFjb72UeWUvfWYThYrUSNGVvqNHFf98",
 
   // Socials
-  X_URL: "",          // e.g. "https://x.com/yourtoken"
+  X_URL: "https://x.com/slice_family",          // e.g. "https://x.com/yourtoken"
   TG_URL: "",         // e.g. "https://t.me/yourtoken"
 
   // Share of claimed creator fees sent to holders (%)
